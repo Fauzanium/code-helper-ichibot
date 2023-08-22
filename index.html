@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ichibot Program</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="judul">Ichibot Code Helper</h1>
+    <form >
+        <label for="index">Index</label>
+        <input type="number" id="index" value="0"><br><br>    
+        <label for="sensor">Sensor</label>
+        <input list="sensor_list" id="sensor"><br><br>
+        <label for="action">Action</label>
+        <input list="action_list" id="action"><br><br>
+        <label for="delay">Delay</label> 
+        <input type="number" step="10" id="delay"><br><br>
+        <label for="line_color">Warna Garis</label>
+        <input type="radio" class="line_color">Hitam <input type="radio" class="line_color">Putih<br><br>
+        <label for="speed_a">Speed A</label> 
+        <input type="number" step="10" id="speed_a"><br><br>
+        <label for="timer">Timer SA</label> 
+        <input type="number" step="10" id="timer"><br><br>
+    </form>
+    <datalist id="sensor_list">
+        <option value="SENSOR_SEMUA">
+        <option value="SENSOR_SEMUA_KENA">
+        <option value="SENSOR_KIRI">
+        <option value="SENSOR_KANAN">
+        <option value="SENSOR_KOSONG">
+        <option value="SENSOR_KIRI_KANAN">
+        <option value="SENSOR_KIRI_TENGAH">
+        <option value="SENSOR_KANAN_TENGAH">
+        <option value="SENSOR_SIKU_KIRI">
+        <option value="SENSOR_SIKU_KANAN">
+    </datalist>
+    <datalist id="action_list">
+        <option value="BELOK_KIRI">
+        <option value="BELOK_KANAN">
+        <option value="LURUS">
+        <option value="STOP">
+    </datalist>
+
+    <button id="send">Send</button>
+    <p>Output</p>
+    <p id="output"></p>
+</body>
+</html>
